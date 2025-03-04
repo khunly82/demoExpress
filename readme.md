@@ -2,15 +2,15 @@
 
 1. Créer une base de données sur postgres
 2. Créer 2 tables (product, category) 
-    product
-        id,
-        name,
-        price,
-        categoryId,
-        image
-    category
-        id
-        name
+    - product
+        - id
+        - name
+        - price
+        - categoryId
+        - image
+    - category
+        - id
+        - name
 3. Ajouter sequelize dans le projet
     ```js
     npm i sequelize
