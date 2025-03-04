@@ -1,0 +1,20 @@
+{
+  "name": "demoexpress",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Khun",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

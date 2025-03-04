@@ -1,0 +1,26 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card {
+        width: 20%;
+        box-shadow: 5px 5px 15px 0 #ccc;
+        margin: 10px;
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+        .card-info {
+            padding: 10px;
+            .card-title {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .card-price {
+                font-style: italic;
+                color: #333;
+                text-align: right;
+            }
+        }
+    }
+}

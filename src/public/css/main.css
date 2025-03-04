@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 0 15px 0 #ccc;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    margin: 0 20px;
+    ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        li {
+            a {
+                color: #333;
+                text-decoration:  none;
+                &:hover {
+                    color: teal;
+                }
+            }
+        }
+    }
+}
+
+main {
+    margin: 20px;
+}

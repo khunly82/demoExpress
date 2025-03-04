@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/shop.css">
+
+    <title>La boutique</title>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <main>
+        <form action="/shop">
+            <select name="cat">
+                <option value="">Toutes les categories</option>
+                <% for(let c of categories) { %>
+                    <% if(c === category) { %>
+                        <option selected value="<%= c %>"><%= c %></option>
+                    <% } else { %>
+                        <option value="<%= c %>"><%= c %></option>
+                    <% } %>
+                <% } %>
+            </select>
+            <button>Rechecher</button>
+        </form>
+        <div class="products">
+            <% for(let product of products) { %>
+                <div class="card">
+                    <img src="<%= product.image %>">
+                    <div class="card-info">
+                        <div class="card-title"><%= product.name + " " + product.categorie %></div>
+                        <div class="card-price"><%= product.price %>€</div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </main>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
